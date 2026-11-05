@@ -37,6 +37,15 @@ final class Delegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         refreshIcon()
     }
 
+    /// Opening the app again (Spotlight, Finder) pops its menu where the mouse is: the
+    /// menu-bar icon can be hidden by the notch or by System Settings → Menu Bar.
+    func applicationShouldHandleReopen(_ s: NSApplication, hasVisibleWindows: Bool) -> Bool {
+        let m = NSMenu(); menuNeedsUpdate(m)
+        NSApp.activate(ignoringOtherApps: true)
+        m.popUp(positioning: nil, at: NSEvent.mouseLocation, in: nil)
+        return false
+    }
+
     func applicationWillTerminate(_ n: Notification) {
         if sleepDisabled() { setSleepDisabled(false) }
     }
