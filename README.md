@@ -40,7 +40,7 @@ The first time you switch it on, the app explains this and macOS asks for the pa
 | `/Applications/Lid Awake.app` | The app. |
 | `/etc/sudoers.d/lid-awake` | The rule above. Checked with `visudo -c` before it is installed (root:wheel, 0440). |
 | `/Library/LaunchDaemons/com.makebecome.lid-awake.reset.plist` | Runs `pmset -a disablesleep 0` at boot, so a restart always gives normal sleep back. Not loaded at install time (it would reset the setting at once); it runs from the next boot. |
-| Login items | Only with *Start at login* (`SMAppService.mainApp`). |
+| Login items | *Start at login* (`SMAppService.mainApp`): on by default from the first start; untick it in the menu and it stays off. |
 
 Uninstalling: *Remove the permission…*, quit, drag the app to the Trash.
 

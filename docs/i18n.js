@@ -18,6 +18,7 @@ en: {
   whatList: `<li><strong>One switch</strong> in the menu bar, <em>Stay on with the lid closed</em>. No Dock icon, no window. The icon is a laptop, red while it is on.</li>
 <li><strong>A beep when the lid closes</strong> while it is on, so you know the Mac did not go to sleep. It is audible even when the Mac is muted or at volume 0: the volume goes up for the beep and back to where it was right after.</li>
 <li><strong>It turns itself off</strong> when you open the lid again, and when you quit it, when it crashes, and when the Mac restarts. Sleep is never left disabled by accident.</li>
+<li><strong>Starts at login</strong> by default; untick <em>Start at login</em> in its menu to stop that.</li>
 <li><strong>Languages:</strong> English, Italiano, Español, Français, Deutsch, from your Mac's settings.</li>`,
   whyH: "Why it asks for a permission, once",
   whyP1: `macOS puts a MacBook to sleep when the lid closes, and only one system setting stops that: ${RULE}, which only an administrator can change. The first time you turn the switch on, Lid Awake explains this and macOS asks for your password in its own dialog. Lid Awake never sees or stores it.`,
@@ -52,6 +53,7 @@ it: {
   whatList: `<li><strong>Un interruttore</strong> nella barra dei menu, <em>Resta acceso col coperchio chiuso</em>. Niente icona nel Dock, nessuna finestra. L'icona è un portatile, rosso quando è attivo.</li>
 <li><strong>Un beep quando chiudi il coperchio</strong> mentre è attivo, così sai che il Mac non è andato in stop. Si sente anche col Mac muto o a volume 0: il volume sale per il beep e torna subito com'era.</li>
 <li><strong>Si spegne da solo</strong> quando riapri il coperchio, quando esci dall'app, se l'app va in crash e quando il Mac si riavvia. Lo stop non resta mai disattivato per sbaglio.</li>
+<li><strong>Si avvia al login</strong> per default; togli la spunta ad <em>Avvia al login</em> nel suo menu per non farlo.</li>
 <li><strong>Lingue:</strong> English, Italiano, Español, Français, Deutsch, dalle impostazioni del Mac.</li>`,
   whyH: "Perché chiede un permesso, una volta",
   whyP1: `macOS mette in stop un MacBook quando si chiude il coperchio, e una sola impostazione di sistema lo impedisce: ${RULE}, che solo un amministratore può cambiare. La prima volta che accendi l'interruttore Lid Awake lo spiega e macOS chiede la password nella sua finestra. Lid Awake non la vede e non la salva mai.`,
@@ -86,6 +88,7 @@ es: {
   whatList: `<li><strong>Un interruptor</strong> en la barra de menús, <em>Seguir encendido con la tapa cerrada</em>. Sin icono en el Dock, sin ventanas. El icono es un portátil, rojo mientras está activado.</li>
 <li><strong>Un pitido al cerrar la tapa</strong> mientras está activado, para que sepas que el Mac no se fue a dormir. Se oye aunque el Mac esté en silencio o a volumen 0: el volumen sube para el pitido y vuelve enseguida a como estaba.</li>
 <li><strong>Se desactiva solo</strong> al volver a abrir la tapa, al salir de la app, si la app falla y al reiniciar el Mac. El reposo nunca queda desactivado por error.</li>
+<li><strong>Se inicia al iniciar sesión</strong> por defecto; desmarca <em>Iniciar al iniciar sesión</em> en su menú para evitarlo.</li>
 <li><strong>Idiomas:</strong> English, Italiano, Español, Français, Deutsch, según los ajustes del Mac.</li>`,
   whyH: "Por qué pide un permiso, una vez",
   whyP1: `macOS pone a dormir un MacBook al cerrar la tapa, y solo un ajuste del sistema lo evita: ${RULE}, que solo un administrador puede cambiar. La primera vez que activas el interruptor, Lid Awake lo explica y macOS pide tu contraseña en su propio diálogo. Lid Awake nunca la ve ni la guarda.`,
@@ -120,6 +123,7 @@ fr: {
   whatList: `<li><strong>Un interrupteur</strong> dans la barre des menus, <em>Rester allumé capot fermé</em>. Pas d'icône dans le Dock, pas de fenêtre. L'icône est un portable, rouge quand il est activé.</li>
 <li><strong>Un bip à la fermeture du capot</strong> quand il est activé, pour que vous sachiez que le Mac ne s'est pas mis en veille. Il s'entend même Mac en sourdine ou à volume 0 : le volume monte pour le bip et revient aussitôt comme avant.</li>
 <li><strong>Il se désactive tout seul</strong> à la réouverture du capot, quand vous le quittez, s'il plante et au redémarrage du Mac. La veille n'est jamais laissée désactivée par accident.</li>
+<li><strong>S'ouvre à la connexion</strong> par défaut ; décochez <em>Ouvrir à la connexion</em> dans son menu pour l'éviter.</li>
 <li><strong>Langues :</strong> English, Italiano, Español, Français, Deutsch, selon les réglages du Mac.</li>`,
   whyH: "Pourquoi il demande une autorisation, une fois",
   whyP1: `macOS met un MacBook en veille quand le capot se ferme, et un seul réglage système l'en empêche : ${RULE}, que seul un administrateur peut changer. La première fois que vous activez l'interrupteur, Lid Awake l'explique et macOS demande votre mot de passe dans sa propre fenêtre. Lid Awake ne le voit ni ne le garde jamais.`,
@@ -154,6 +158,7 @@ de: {
   whatList: `<li><strong>Ein Schalter</strong> in der Menüleiste, <em>Bei geschlossenem Deckel anbleiben</em>. Kein Dock-Symbol, kein Fenster. Das Symbol ist ein Laptop, rot, solange er an ist.</li>
 <li><strong>Ein Piepton beim Zuklappen</strong>, solange er an ist, damit du weißt, dass der Mac nicht schlafen gegangen ist. Hörbar auch bei stummem Mac oder Lautstärke 0: Die Lautstärke geht für den Ton hoch und gleich danach zurück.</li>
 <li><strong>Es schaltet sich selbst aus</strong>, wenn du den Deckel wieder öffnest, die App beendest, sie abstürzt oder der Mac neu startet. Der Ruhezustand bleibt nie aus Versehen abgeschaltet.</li>
+<li><strong>Startet beim Anmelden</strong> standardmäßig; entferne im Menü den Haken bei <em>Beim Anmelden starten</em>, um das abzustellen.</li>
 <li><strong>Sprachen:</strong> English, Italiano, Español, Français, Deutsch, nach den Einstellungen des Mac.</li>`,
   whyH: "Warum es einmal um Erlaubnis fragt",
   whyP1: `macOS schickt ein MacBook beim Zuklappen schlafen, und nur eine Systemeinstellung verhindert das: ${RULE}, die nur ein Administrator ändern kann. Wenn du den Schalter zum ersten Mal einschaltest, erklärt Lid Awake das, und macOS fragt in seinem eigenen Dialog nach deinem Passwort. Lid Awake sieht oder speichert es nie.`,

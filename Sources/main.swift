@@ -9,7 +9,7 @@
 import AppKit
 import ServiceManagement
 
-let appVersion = "1.0.0"
+let appVersion = "1.0.1"
 
 let args = CommandLine.arguments
 if let i = args.firstIndex(of: "--guard"), i + 1 < args.count, let p = pid_t(args[i + 1]) { runGuard(p) }
@@ -27,6 +27,11 @@ final class Delegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         if sleepDisabled() { setSleepDisabled(false) }  // whatever was left on before this start
         let g = Process(); g.executableURL = Bundle.main.executableURL; g.arguments = ["--guard", "\(getpid())"]
         try? g.run()
+        // Start at login by default, once: a later "Start at login" untick is respected.
+        if !UserDefaults.standard.bool(forKey: "loginItemDefaulted") {
+            try? SMAppService.mainApp.register()
+            UserDefaults.standard.set(true, forKey: "loginItemDefaulted")
+        }
 
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         let m = NSMenu(); m.delegate = self; statusItem.menu = m
