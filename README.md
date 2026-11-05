@@ -58,7 +58,7 @@ Needs macOS 13+ and the Xcode command line tools. `swift tools/make-icon.swift` 
 
 - **Lid:** IOKit's `IOPMrootDomain` property `AppleClamshellState` (true = closed). The app registers for the root domain's
   general-interest notifications and re-reads it on each one; a 5-second timer catches a missed notification.
-- **State:** read from `pmset -g` (`SleepDisabled 1`), so the menu always shows what the system actually has.
+- **State:** never remembered, always read from `pmset -g` (`SleepDisabled 1`): the icon re-reads it every 5 s and the menu on every open, and the beep and the auto-off check the real bit, so a change made from the Terminal is followed.
 - **Beep:** CoreAudio on the default output device: unmute, raise the volume scalar to at least 0.5 (master element, or
   channels 1 and 2), play `/System/Library/Sounds/Glass.aiff` twice, restore volume and mute.
 - **Guard:** at start the app launches its own binary as `LidAwake --guard <pid>`, which waits on a kqueue `NOTE_EXIT`
