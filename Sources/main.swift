@@ -62,8 +62,10 @@ final class Delegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func refreshIcon() {
         guard let b = statusItem?.button else { return }
         let on = sleepDisabled()
-        b.image = NSImage(systemSymbolName: on ? "sun.max.fill" : "laptopcomputer", accessibilityDescription: t(on ? "isOn" : "isOff"))
-        b.image?.isTemplate = true
+        // Same laptop either way; red while sleep is disabled.
+        let img = NSImage(systemSymbolName: "laptopcomputer", accessibilityDescription: t(on ? "isOn" : "isOff"))
+        b.image = on ? img?.withSymbolConfiguration(.init(paletteColors: [.systemRed])) : img
+        b.image?.isTemplate = !on
         b.toolTip = t(on ? "isOn" : "isOff")
     }
 

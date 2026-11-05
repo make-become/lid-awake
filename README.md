@@ -16,7 +16,7 @@ It downloads the latest release into `/Applications` (`~/Applications` if that i
 
 ## What it does
 
-- **One switch**, *Stay on with the lid closed*, in the menu bar. The icon is a laptop while it is off and a sun while it is on.
+- **One switch**, *Stay on with the lid closed*, in the menu bar. The icon is a laptop, red while it is on.
 - **A beep when the lid closes** while it is on, so you know the Mac did not go to sleep. Audible even when muted or at volume 0: the output is unmuted and raised to 75 % for the beep, then put back exactly as it was.
 - **It never stays on by accident.** It turns itself off when the lid opens again, when you quit it, when it crashes or is force-quit (a small guard process waits for the app to exit), when the Mac restarts (a LaunchDaemon at boot), and when the app starts.
 - **Languages:** English, Italiano, Español, Français, Deutsch (from the Mac's settings).

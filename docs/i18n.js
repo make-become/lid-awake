@@ -15,7 +15,7 @@ en: {
   copy: "Copy", copied: "Copied", more: "More info", unofficial: `A ${MB} project.`,
   back: "← Back", source: "Source code on GitHub",
   whatH: "What it does",
-  whatList: `<li><strong>One switch</strong> in the menu bar, <em>Stay on with the lid closed</em>. No Dock icon, no window. The icon is a sun while it is on.</li>
+  whatList: `<li><strong>One switch</strong> in the menu bar, <em>Stay on with the lid closed</em>. No Dock icon, no window. The icon is a laptop, red while it is on.</li>
 <li><strong>A beep when the lid closes</strong> while it is on, so you know the Mac did not go to sleep. It is audible even when the Mac is muted or at volume 0: the volume goes up for the beep and back to where it was right after.</li>
 <li><strong>It turns itself off</strong> when you open the lid again, and when you quit it, when it crashes, and when the Mac restarts. Sleep is never left disabled by accident.</li>
 <li><strong>Languages:</strong> English, Italiano, Español, Français, Deutsch, from your Mac's settings.</li>`,
@@ -49,7 +49,7 @@ it: {
   copy: "Copia", copied: "Copiato", more: "Più informazioni", unofficial: `Un progetto ${MB}.`,
   back: "← Indietro", source: "Codice sorgente su GitHub",
   whatH: "Cosa fa",
-  whatList: `<li><strong>Un interruttore</strong> nella barra dei menu, <em>Resta acceso col coperchio chiuso</em>. Niente icona nel Dock, nessuna finestra. Quando è attivo l'icona è un sole.</li>
+  whatList: `<li><strong>Un interruttore</strong> nella barra dei menu, <em>Resta acceso col coperchio chiuso</em>. Niente icona nel Dock, nessuna finestra. L'icona è un portatile, rosso quando è attivo.</li>
 <li><strong>Un beep quando chiudi il coperchio</strong> mentre è attivo, così sai che il Mac non è andato in stop. Si sente anche col Mac muto o a volume 0: il volume sale per il beep e torna subito com'era.</li>
 <li><strong>Si spegne da solo</strong> quando riapri il coperchio, quando esci dall'app, se l'app va in crash e quando il Mac si riavvia. Lo stop non resta mai disattivato per sbaglio.</li>
 <li><strong>Lingue:</strong> English, Italiano, Español, Français, Deutsch, dalle impostazioni del Mac.</li>`,
@@ -83,7 +83,7 @@ es: {
   copy: "Copiar", copied: "Copiado", more: "Más información", unofficial: `Un proyecto de ${MB}.`,
   back: "← Volver", source: "Código fuente en GitHub",
   whatH: "Qué hace",
-  whatList: `<li><strong>Un interruptor</strong> en la barra de menús, <em>Seguir encendido con la tapa cerrada</em>. Sin icono en el Dock, sin ventanas. Mientras está activado el icono es un sol.</li>
+  whatList: `<li><strong>Un interruptor</strong> en la barra de menús, <em>Seguir encendido con la tapa cerrada</em>. Sin icono en el Dock, sin ventanas. El icono es un portátil, rojo mientras está activado.</li>
 <li><strong>Un pitido al cerrar la tapa</strong> mientras está activado, para que sepas que el Mac no se fue a dormir. Se oye aunque el Mac esté en silencio o a volumen 0: el volumen sube para el pitido y vuelve enseguida a como estaba.</li>
 <li><strong>Se desactiva solo</strong> al volver a abrir la tapa, al salir de la app, si la app falla y al reiniciar el Mac. El reposo nunca queda desactivado por error.</li>
 <li><strong>Idiomas:</strong> English, Italiano, Español, Français, Deutsch, según los ajustes del Mac.</li>`,
@@ -117,7 +117,7 @@ fr: {
   copy: "Copier", copied: "Copié", more: "Plus d'infos", unofficial: `Un projet ${MB}.`,
   back: "← Retour", source: "Code source sur GitHub",
   whatH: "Ce qu'il fait",
-  whatList: `<li><strong>Un interrupteur</strong> dans la barre des menus, <em>Rester allumé capot fermé</em>. Pas d'icône dans le Dock, pas de fenêtre. L'icône est un soleil quand il est activé.</li>
+  whatList: `<li><strong>Un interrupteur</strong> dans la barre des menus, <em>Rester allumé capot fermé</em>. Pas d'icône dans le Dock, pas de fenêtre. L'icône est un portable, rouge quand il est activé.</li>
 <li><strong>Un bip à la fermeture du capot</strong> quand il est activé, pour que vous sachiez que le Mac ne s'est pas mis en veille. Il s'entend même Mac en sourdine ou à volume 0 : le volume monte pour le bip et revient aussitôt comme avant.</li>
 <li><strong>Il se désactive tout seul</strong> à la réouverture du capot, quand vous le quittez, s'il plante et au redémarrage du Mac. La veille n'est jamais laissée désactivée par accident.</li>
 <li><strong>Langues :</strong> English, Italiano, Español, Français, Deutsch, selon les réglages du Mac.</li>`,
@@ -151,7 +151,7 @@ de: {
   copy: "Kopieren", copied: "Kopiert", more: "Mehr Infos", unofficial: `Ein ${MB}-Projekt.`,
   back: "← Zurück", source: "Quellcode auf GitHub",
   whatH: "Was es macht",
-  whatList: `<li><strong>Ein Schalter</strong> in der Menüleiste, <em>Bei geschlossenem Deckel anbleiben</em>. Kein Dock-Symbol, kein Fenster. Solange er an ist, ist das Symbol eine Sonne.</li>
+  whatList: `<li><strong>Ein Schalter</strong> in der Menüleiste, <em>Bei geschlossenem Deckel anbleiben</em>. Kein Dock-Symbol, kein Fenster. Das Symbol ist ein Laptop, rot, solange er an ist.</li>
 <li><strong>Ein Piepton beim Zuklappen</strong>, solange er an ist, damit du weißt, dass der Mac nicht schlafen gegangen ist. Hörbar auch bei stummem Mac oder Lautstärke 0: Die Lautstärke geht für den Ton hoch und gleich danach zurück.</li>
 <li><strong>Es schaltet sich selbst aus</strong>, wenn du den Deckel wieder öffnest, die App beendest, sie abstürzt oder der Mac neu startet. Der Ruhezustand bleibt nie aus Versehen abgeschaltet.</li>
 <li><strong>Sprachen:</strong> English, Italiano, Español, Français, Deutsch, nach den Einstellungen des Mac.</li>`,
