@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lid Awake</title>
+<meta name="description" content="Keep a MacBook running with the lid closed, for one long job, with a beep to tell you it is on.">
+<link rel="icon" href="img/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=110500">
+<script src="i18n.js?v=110500" defer></script>
+</head>
+<body>
+<main>
+  <a class="mb" href="https://make-become.github.io/"><span class="mb-dot" aria-hidden="true"></span><span class="mb-name">make become</span><span class="mb-role">an artware studio</span></a>
+  <header>
+    <img src="img/app-icon.png" alt="">
+    <h1>Lid Awake</h1>
+  </header>
+
+  <p class="lead" data-i18n="lead">Keep your MacBook running with the lid closed.</p>
+
+  <div class="shots">
+    <img data-i18n-src="img/menu-off-{lang}.png" src="img/menu-off-en.png" alt="" data-i18n-alt="altOff">
+    <img data-i18n-src="img/menu-on-{lang}.png" src="img/menu-on-en.png" alt="" data-i18n-alt="altOn">
+  </div>
+
+  <h2 data-i18n="installH">Install</h2>
+  <p class="muted" data-i18n="installP">Paste this in the Terminal:</p>
+  <div class="copy"><span id="cmd">curl -fsSL https://make-become.github.io/lid-awake/install.sh | sh</span><button data-copy="cmd" data-i18n="copy">Copy</button></div>
+
+  <h2 data-i18n="askH">Or ask Claude to do it</h2>
+  <p class="muted" data-i18n="askP">Paste this in Claude Code or Claude Desktop:</p>
+  <div class="copy"><span id="prompt" data-i18n="prompt">Install Lid Awake on my Mac.</span><button data-copy="prompt" data-i18n="copy">Copy</button></div>
+
+  <div class="actions">
+    <a class="btn" href="details.html" data-keep-lang data-i18n="more">More info</a>
+    <a class="mb-btn" href="https://make-become.github.io/"><span class="mb-btn-name">make become</span><span class="mb-btn-role">an artware studio</span></a>
+  </div>
+
+  <footer>
+    <span data-i18n="unofficial">A make become project.</span>
+    <span class="langs"></span>
+  </footer>
+</main>
+</body>
+</html>
