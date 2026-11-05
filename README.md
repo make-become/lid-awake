@@ -17,7 +17,7 @@ It downloads the latest release into `/Applications` (`~/Applications` if that i
 ## What it does
 
 - **One switch**, *Stay on with the lid closed*, in the menu bar. The icon is a laptop while it is off and a sun while it is on.
-- **A beep when the lid closes** while it is on, so you know the Mac did not go to sleep. Audible even when muted or at volume 0: the output is unmuted and raised to 50 % for the beep, then put back exactly as it was.
+- **A beep when the lid closes** while it is on, so you know the Mac did not go to sleep. Audible even when muted or at volume 0: the output is unmuted and raised to 75 % for the beep, then put back exactly as it was.
 - **It never stays on by accident.** It turns itself off when the lid opens again, when you quit it, when it crashes or is force-quit (a small guard process waits for the app to exit), when the Mac restarts (a LaunchDaemon at boot), and when the app starts.
 - **Languages:** English, Italiano, Español, Français, Deutsch (from the Mac's settings).
 
@@ -59,7 +59,7 @@ Needs macOS 13+ and the Xcode command line tools. `swift tools/make-icon.swift` 
 - **Lid:** IOKit's `IOPMrootDomain` property `AppleClamshellState` (true = closed). The app registers for the root domain's
   general-interest notifications and re-reads it on each one; a 5-second timer catches a missed notification.
 - **State:** never remembered, always read from `pmset -g` (`SleepDisabled 1`): the icon re-reads it every 5 s and the menu on every open, and the beep and the auto-off check the real bit, so a change made from the Terminal is followed.
-- **Beep:** CoreAudio on the default output device: unmute, raise the volume scalar to at least 0.5 (master element, or
+- **Beep:** CoreAudio on the default output device: unmute, raise the volume scalar to at least 0.75 (master element, or
   channels 1 and 2), play `/System/Library/Sounds/Glass.aiff` twice, restore volume and mute.
 - **Guard:** at start the app launches its own binary as `LidAwake --guard <pid>`, which waits on a kqueue `NOTE_EXIT`
   for the app and then turns sleep back on. Works for Quit, crashes and Force Quit alike.

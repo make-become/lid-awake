@@ -55,7 +55,7 @@ struct OutputState {
     }
 }
 
-let beepLevel: Float32 = 0.5
+let beepLevel: Float32 = 0.75
 private var playing: NSSound?
 
 /// Two chimes, then the volume goes back. Returns the state it raised from, for tests.
