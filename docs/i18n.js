@@ -7,6 +7,7 @@ const RULE = "<code>pmset -a disablesleep 0</code> / <code>1</code>";
 
 const T = {
 en: {
+  by: "by make become",
   lead: "Keep your MacBook running with the lid closed, for that one long job. One switch in the menu bar. When you close the lid it beeps, even on mute, so you know the Mac is still on; it turns itself off when you open the lid again. Free, open source.",
   altOff: "The Lid Awake menu, switched off", altOn: "The Lid Awake menu, switched on",
   installH: "Install", installP: "Paste this in the Terminal:",
@@ -42,6 +43,7 @@ en: {
   footer: `MIT licence · ${MB}`,
 },
 it: {
+  by: "di make become",
   lead: "Tieni acceso il MacBook col coperchio chiuso, per quel lavoro lungo. Un solo interruttore nella barra dei menu. Quando chiudi il coperchio fa un beep, anche col volume a zero, così sai che il Mac è ancora acceso; si spegne da solo quando riapri il coperchio. Gratuito, open source.",
   altOff: "Il menu di Lid Awake, spento", altOn: "Il menu di Lid Awake, attivo",
   installH: "Installa", installP: "Incolla questo nel Terminale:",
@@ -77,6 +79,7 @@ it: {
   footer: `Licenza MIT · ${MB}`,
 },
 es: {
+  by: "de make become",
   lead: "Mantén tu MacBook encendido con la tapa cerrada, para ese trabajo largo. Un solo interruptor en la barra de menús. Al cerrar la tapa suena un pitido, incluso en silencio, para que sepas que el Mac sigue encendido; se desactiva solo al volver a abrir la tapa. Gratis, de código abierto.",
   altOff: "El menú de Lid Awake, desactivado", altOn: "El menú de Lid Awake, activado",
   installH: "Instalar", installP: "Pega esto en el Terminal:",
@@ -112,6 +115,7 @@ es: {
   footer: `Licencia MIT · ${MB}`,
 },
 fr: {
+  by: "par make become",
   lead: "Gardez votre MacBook allumé capot fermé, pour ce long travail. Un seul interrupteur dans la barre des menus. Quand vous fermez le capot, il bipe, même en sourdine, pour que vous sachiez que le Mac est toujours allumé ; il se désactive tout seul quand vous rouvrez le capot. Gratuit, open source.",
   altOff: "Le menu de Lid Awake, désactivé", altOn: "Le menu de Lid Awake, activé",
   installH: "Installer", installP: "Collez ceci dans le Terminal :",
@@ -147,6 +151,7 @@ fr: {
   footer: `Licence MIT · ${MB}`,
 },
 de: {
+  by: "von make become",
   lead: "Lass dein MacBook bei geschlossenem Deckel laufen, für diesen einen langen Job. Ein einziger Schalter in der Menüleiste. Beim Zuklappen piept es, auch stummgeschaltet, damit du weißt, dass der Mac noch läuft; beim Aufklappen schaltet es sich selbst aus. Kostenlos, Open Source.",
   altOff: "Das Menü von Lid Awake, ausgeschaltet", altOn: "Das Menü von Lid Awake, eingeschaltet",
   installH: "Installieren", installP: "Füge das im Terminal ein:",
